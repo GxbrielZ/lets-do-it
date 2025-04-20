@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';;
-import { Todo } from './types';;
+import { Todo } from './types';
+import './App.css';
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -24,11 +25,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
-      <h1>To-Do List</h1>
+    <div className='app-container'>
+      <h1>Tasks List</h1>
       <TodoInput addTodo={addTodo} />
       <TodoList todos={todos} toggleComplete={toggleComplete} />
-    </>
+    </div>
   );
 };
 

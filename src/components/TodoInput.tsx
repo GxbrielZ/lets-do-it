@@ -15,7 +15,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ addTodo }) => {
   };
 
   return (
-    <div>
+    <div className="todo-input-container">
       <input
         type="text"
         value={text}

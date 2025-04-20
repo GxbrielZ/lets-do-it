@@ -8,7 +8,7 @@ interface TodoItemProps {
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleComplete }) => {
   return (
-    <div>
+    <div className='todo-item'>
       <input
         type='checkbox'
         checked={todo.completed}
