@@ -22,7 +22,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ addTodo }) => {
         onChange={(e) => setText(e.target.value)}
         placeholder="Add a new task..."
       />
-      <button onClick={handleAddClick}>Add</button>
+      <button onClick={handleAddClick} className="add-btn">Add</button>
     </div>
   );
 };
